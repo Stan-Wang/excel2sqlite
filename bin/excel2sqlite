@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/excel2sqlite'
+
+# 重新安排参数，将第一个参数作为子命令
+if ARGV.size > 0 && !ARGV[0].start_with?('-') && File.exist?(ARGV[0])
+  # 将文件路径作为参数传递给default命令
+  ARGV.unshift('default')
+end
+
+Excel2SQLite::CLI.start(ARGV)
