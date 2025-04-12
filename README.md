@@ -27,7 +27,7 @@ gem install excel2sqlite
 ### 方法2：从源代码安装
 
 ```bash
-git clone https://github.com/yourusername/excel2sqlite.git
+git clone https://github.com/Stan-Wang/excel2sqlite.git
 cd excel2sqlite
 bundle install
 rake install
